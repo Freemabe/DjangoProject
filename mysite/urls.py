@@ -1,3 +1,4 @@
+
 """mysite URL Configuration
 
 The `urlpatterns` list routes URLs to views. For more information please see:
@@ -19,4 +20,5 @@ from django.urls import path, include  # <-- Make sure you have both of these im
 urlpatterns = [
     path('polling/', include('polling.urls')),  # <-- Add this
     path('admin/', admin.site.urls),
+    path('', include('blogging.urls')),
 ]
